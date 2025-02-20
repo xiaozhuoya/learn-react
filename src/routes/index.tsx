@@ -11,7 +11,7 @@ import { RouteObject } from 'react-router-dom';
 import Home from '@/pages/Home.tsx';
 import About from '@/pages/About.tsx';
 import NotFound from '@/pages/NotFound.tsx';
-import Demo from '@/pages/Demo.tsx';
+import Flip from '@/pages/flip.tsx';
 
 // 路由配置数组
 const RouteConfig: RouteObject[] = [
@@ -24,8 +24,8 @@ const RouteConfig: RouteObject[] = [
     element: <About />
   },
   {
-    path: '/demo',
-    element: <Demo />
+    path: '/flip',
+    element: <Flip />
   },
   {
     path: '*',
