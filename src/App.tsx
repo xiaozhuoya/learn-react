@@ -1,12 +1,13 @@
 // src/App.tsx
-import React from 'react';
-import RouteConfig from '@/routes';
+import { useRoutes } from "react-router-dom";
+import RouteConfig from "@/routes";
 
-const App: React.FC = () => {
+const App = () => {
+  const routing = useRoutes(RouteConfig);
   return (
     <div>
-      {/* 渲染路由配置组件，开启路由功能 */}
-      <RouteConfig />
+      {routing}
+      {/* <RouteConfig /> */}
     </div>
   );
 };
