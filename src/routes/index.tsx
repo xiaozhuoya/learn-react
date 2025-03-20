@@ -1,7 +1,7 @@
 /*
  * @Author: Jie Zhuo
  * @Date: 2025-02-20 15:46:33
- * @LastEditTime: 2025-03-18 17:00:42
+ * @LastEditTime: 2025-03-20 09:41:40
  * @LastEditors: Jie Zhuo
  * @Description:
  * @FilePath: \learn-react\src\routes\index.tsx
@@ -17,12 +17,17 @@ import WishList1 from "@/pages/wish-list1";
 import FeedBack from "@/pages/feed-back";
 import Accordion from "@/pages/accordion";
 import SyncedInputs from "@/pages/synced-inputs";
+import SearchBar from "@/pages/search-bar";
 
 // 路由配置数组
 const RouteConfig: RouteObject[] = [
   {
     path: "/",
     element: <Home />,
+  },
+  {
+    path: "/search-bar",
+    element: <SearchBar />,
   },
   {
     path: "/synced-inputs",
