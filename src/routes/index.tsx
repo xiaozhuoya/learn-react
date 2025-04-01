@@ -18,12 +18,17 @@ import FeedBack from "@/pages/feed-back";
 import Accordion from "@/pages/accordion";
 import SyncedInputs from "@/pages/synced-inputs";
 import SearchBar from "@/pages/search-bar";
+import TodoList from "@/pages/todo-list/index"
 
 // 路由配置数组
 const RouteConfig: RouteObject[] = [
   {
     path: "/",
     element: <Home />,
+  },
+  {
+    path: "/todo-list",
+    element: <TodoList />,
   },
   {
     path: "/search-bar",
