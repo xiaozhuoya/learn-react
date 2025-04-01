@@ -1,7 +1,7 @@
 /*
  * @Author: Jie Zhuo
  * @Date: 2025-02-20 15:46:33
- * @LastEditTime: 2025-03-20 09:41:40
+ * @LastEditTime: 2025-04-01 15:08:15
  * @LastEditors: Jie Zhuo
  * @Description:
  * @FilePath: \learn-react\src\routes\index.tsx
@@ -20,12 +20,17 @@ import SyncedInputs from "@/pages/synced-inputs";
 import SearchBar from "@/pages/search-bar";
 import TodoList from "@/pages/todo-list/index"
 import SendEmails from "@/pages/send-emails/index";
+import ImagesList from "@/pages/images-list/index";
 
 // 路由配置数组
 const RouteConfig: RouteObject[] = [
   {
     path: "/",
     element: <Home />,
+  },
+  {
+    path: "/images-list",
+    element: <ImagesList />,
   },
   {
     path: "/send-emails",
