@@ -25,6 +25,6 @@
     "outDir": "./out-tsc/app",
     "types": []
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx"],
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/pages/send-emails/Chat.tsx", "src/pages/send-emails/messengerReducer.tsx", "src/pages/send-emails/ContactList.tsx"],
   "exclude": ["node_modules", "dist"]
 }

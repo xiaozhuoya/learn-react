@@ -19,12 +19,17 @@ import Accordion from "@/pages/accordion";
 import SyncedInputs from "@/pages/synced-inputs";
 import SearchBar from "@/pages/search-bar";
 import TodoList from "@/pages/todo-list/index"
+import SendEmails from "@/pages/send-emails/index";
 
 // 路由配置数组
 const RouteConfig: RouteObject[] = [
   {
     path: "/",
     element: <Home />,
+  },
+  {
+    path: "/send-emails",
+    element: <SendEmails />,
   },
   {
     path: "/todo-list",
