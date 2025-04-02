@@ -21,12 +21,17 @@ import SearchBar from "@/pages/search-bar";
 import TodoList from "@/pages/todo-list/index"
 import SendEmails from "@/pages/send-emails/index";
 import ImagesList from "@/pages/images-list/index";
-
+import SendUndo from "@/pages/send-undo/index";
+  
 // 路由配置数组
 const RouteConfig: RouteObject[] = [
   {
     path: "/",
     element: <Home />,
+  },
+  {
+    path: "/send-undo",
+    element: <SendUndo />,
   },
   {
     path: "/images-list",
