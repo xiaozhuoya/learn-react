@@ -1,6 +1,5 @@
 import { useState, useRef } from "react";
 
-
 export default function Chat() {
   const [text, setText] = useState("");
   const [isSending, setIsSending] = useState(false);
@@ -21,6 +20,8 @@ export default function Chat() {
 
   return (
     <>
+      <Toggle />
+      <div></div>
       <input
         disabled={isSending}
         value={text}
@@ -31,5 +32,19 @@ export default function Chat() {
       </button>
       {isSending && <button onClick={handleUndo}>撤销</button>}
     </>
+  );
+}
+
+export function Toggle() {
+  const [isOn, setIsOn] = useState(false);
+
+  return (
+    <button
+      onClick={() => {
+        setIsOn(!isOn);
+      }}
+    >
+      {isOn ? "开" : "关"}
+    </button>
   );
 }
